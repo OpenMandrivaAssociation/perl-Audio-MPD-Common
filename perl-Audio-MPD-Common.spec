@@ -13,6 +13,7 @@ Url:            http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/Audio/%{module}-%{version}.tar.bz2
 Buildrequires:	perl(Module::Build)
 Buildrequires:	perl(Class::Accessor::Fast)
+Buildrequires:	perl(Readonly)
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
