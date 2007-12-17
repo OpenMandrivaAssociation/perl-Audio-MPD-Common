@@ -15,7 +15,6 @@ Buildrequires:	perl(Module::Build)
 Buildrequires:	perl(Class::Accessor::Fast)
 Buildrequires:	perl(Readonly)
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 Depending on whether you're using a POE-aware environment or not, people
