@@ -1,21 +1,22 @@
-%define module	Audio-MPD-Common
-%define name	perl-%{module}
-%define version 0.1.4
-%define release %mkrel 2
+%define upstream_name	 Audio-MPD-Common
+%define upstream_version 1.092910
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	A bunch of common helper classes for mpd
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Audio/%{module}-%{version}.tar.bz2
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Audio/%{upstream_name}-%{upstream_version}.tar.gz
+
 Buildrequires:	perl(Module::Build)
 Buildrequires:	perl(Class::Accessor::Fast)
 Buildrequires:	perl(Readonly)
+
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Depending on whether you're using a POE-aware environment or not, people
@@ -43,7 +44,7 @@ Note that those modules should not be of any use outside the two mpd modules
 afore-mentioned.
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Build.PL installdirs=vendor
