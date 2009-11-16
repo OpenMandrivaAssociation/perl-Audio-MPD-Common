@@ -11,10 +11,11 @@ Group:		Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Audio/%{upstream_name}-%{upstream_version}.tar.gz
 
+Buildrequires:	perl(Module::Build)
 Buildrequires:	perl(Moose)
 Buildrequires:	perl(Moose::Util::TypeConstraints)
-Buildrequires:	perl(Module::Build)
-Buildrequires:	perl(Class::Accessor::Fast)
+Buildrequires:	perl(MooseX::Has::Sugar)
+Buildrequires:	perl(MooseX::Types::Moose)
 Buildrequires:	perl(Readonly)
 
 BuildArch:      noarch
