@@ -1,2 +1,4 @@
+removed_sources:
+  Audio-MPD-Common-1.110550.tar.gz: c78bfcaad1566c053275c364111aa209542c899e
 sources:
-  "Audio-MPD-Common-1.110550.tar.gz": c78bfcaad1566c053275c364111aa209542c899e
+  Audio-MPD-Common-1.120881.tar.gz: 48626197ad1a4e514b6487ad87949e964ed414f1

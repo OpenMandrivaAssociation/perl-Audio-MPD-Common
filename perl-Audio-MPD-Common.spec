@@ -1,15 +1,14 @@
 %define upstream_name	 Audio-MPD-Common
-%define upstream_version 1.110550
-
+%define upstream_version 1.120881
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 1.120881
+Release:	1
 
 Summary:	A bunch of common helper classes for mpd
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Audio/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Audio/Audio-MPD-Common-1.120881.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Module::Build)
@@ -18,6 +17,7 @@ BuildRequires:	perl(Moose::Util::TypeConstraints)
 BuildRequires:	perl(MooseX::Has::Sugar)
 BuildRequires:	perl(MooseX::Types::Moose)
 BuildRequires:	perl(Readonly)
+BuildRequires:	perl(String::Formatter)
 
 BuildArch:	noarch
 
@@ -119,5 +119,6 @@ perl Build.PL installdirs=vendor
 * Sun Jul 01 2007 Guillaume Rousse <guillomovitch@mandriva.org> 0.1.1-1mdv2008.0
 + Revision: 46769
 - import perl-Audio-MPD-Common
+
 
 
