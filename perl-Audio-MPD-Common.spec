@@ -1,5 +1,5 @@
 %define upstream_name	 Audio-MPD-Common
-%define upstream_version 2.000
+%define upstream_version 2.002
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	1
@@ -65,6 +65,3 @@ perl Build.PL installdirs=vendor
 %doc LICENSE README Changes
 %{perl_vendorlib}/Audio
 %{_mandir}/man3/*
-
-
-
