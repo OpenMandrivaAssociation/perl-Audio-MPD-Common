@@ -8,7 +8,7 @@ Summary:	A bunch of common helper classes for mpd
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/Audio-MPD-Common
+Url:		https://github.com/jquelin/audio-mpd-common
 Source0:	https://cpan.metacpan.org/authors/id/J/JQ/JQUELIN/Audio-MPD-Common-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
