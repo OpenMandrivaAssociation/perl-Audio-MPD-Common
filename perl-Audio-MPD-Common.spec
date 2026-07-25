@@ -1,15 +1,15 @@
 %define upstream_name	 Audio-MPD-Common
-%define upstream_version 2.002
+%define upstream_version 2.003
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	A bunch of common helper classes for mpd
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Audio/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		http://search.cpan.org/dist/Audio-MPD-Common
+Source0:	https://cpan.metacpan.org/authors/id/J/JQ/JQUELIN/Audio-MPD-Common-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires: perl(namespace::autoclean)
